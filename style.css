@@ -147,3 +147,48 @@ input[type='email'].form-error {
     border: 0;
     outline: 0;    
 }
+
+.submit-btn:hover {
+    background-color: var(--dark-grey);
+}   
+
+.success-message {
+    background-color: var(--dark-grey);
+    color: var(--light-green);
+    width: max-content;
+    padding: 1rem;
+    pointer-events: none;
+    opacity: 0;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .35rem;
+}
+
+.success-message.active {
+    display: block;
+    pointer-events: all;
+
+    animation-name: fadeOut;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0%, 25%, 50%, 75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.message-header {
+    color: var(--white);
+    margin-bottom: .5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
