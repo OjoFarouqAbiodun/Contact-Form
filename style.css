@@ -36,7 +36,8 @@ textarea {
     border-radius: .35rem;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     outline: 1px solid var(--green);
     border: 1px solid var(--green);
 }
@@ -46,7 +47,7 @@ input[type='email'].form-error {
     border: 1px solid var(--red);
 }
 
-.required-input{
+.required-input {
     color: var(--green);
 }
 
@@ -81,7 +82,7 @@ input[type='email'].form-error {
     gap: 1rem;
 }
 
-.radio-option{
+.radio-option {
     width: 100%;
     padding: .5rem 1rem;
     outline: 1px solid var(--medium-grey);
@@ -98,7 +99,7 @@ input[type='email'].form-error {
     margin-top: .5rem;
 }
 
-.radio-option.active{
+.radio-option.active {
     background-color: var(--light-green);
 }
 
@@ -120,3 +121,29 @@ input[type='email'].form-error {
     cursor: pointer;
 }
 
+.form-item:nth-child(5) {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.form-item:nth-child(5) input[type='checkbox'] {
+    cursor: pointer;
+    accent-color: var(--green);
+}
+
+.form-item:nth-child(5) label {
+    cursor: pointer;
+}
+
+.submit-btn{
+    /* all: unset; */
+    width: 100%;
+    background-color: var(--green);
+    color: var(--white);
+    padding: .75rem;
+    border-radius: .35rem;
+    cursor: pointer;
+    border: 0;
+    outline: 0;    
+}
