@@ -86,4 +86,7 @@ const successMessage = document.getElementById('success-message')
  })
 
  //Email Valiidation Function 
- 
+ function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email)
+ }
