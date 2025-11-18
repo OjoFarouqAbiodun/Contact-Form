@@ -113,7 +113,7 @@ form.addEventListener("submit", (e) => {
     isValid &= validateField(message, ".message .form-alert", message.value.trim() === "");
 
     // Query type
-    const queryAlert = document.querySelector(".query-type-alert");
+   const queryAlert = document.querySelector(".radio-inputs").nextElementSibling;
     if (!queryType) {
         queryAlert.style.display = "block";
         isValid = false;
